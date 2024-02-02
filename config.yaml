@@ -10,6 +10,15 @@ buildExpired: false
 
 # googleAnalytics: UA-123-45
 
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -22,8 +31,8 @@ params:
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  DateFormat: "2024-01-31"
+  defaultTheme: light # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -33,7 +42,7 @@ params:
   ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -45,15 +54,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
+    favicon: "favicon.svg"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
-    icon: /apple-touch-icon.png
+    text: ""
+    icon: logo.svg
     iconHeight: 35
 
   # profile-mode
@@ -73,7 +82,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "...tiff is typing"
+    Title: ""
     Content: hey there. nice of you to visit
 
   socialIcons:
@@ -117,10 +126,10 @@ menu:
     title: Archive
     url: /posts/
     weight: 6
-  - identifier: white-lightning
-    name: PC Build
+  - identifier: pc
+    name: PC
     title: PC Build
-    url: /white-lightning/
+    url: /pc/
     weight: 5
   - identifier: console-log
     name: Console Log
@@ -128,19 +137,19 @@ menu:
     url: /consoles/
     weight: 6
   - identifier: games
-    name: Game Reviews
-    title: Game Reviews
+    name: Games
+    title: Games
     url: /games/
     weight: 7
-  - identifier: movie-reviews
-    name: Movie Reviews
-    title: Movie Reviews
+  - identifier: movies
+    name: Movies
+    title: Movies
     url: /movies/
     weight: 8
-  - identifier: vignettes
-    name: Vignettes
-    title: Vignettes
-    url: /vignettes/
+  - identifier: notes
+    name: Notes
+    title: Notes
+    url: /notes/
     weight: 3
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
